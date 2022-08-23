@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order form</title>
+    <style>
+        /* .form{
+            border: 1px solid rgb(12, 12, 126);
+            padding-left: 10px;
+            width: 50%;
+            padding-bottom: 50px;
+        } */
+        
+        table, th, td {
+        border: 1px solid rgb(255, 149, 0);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>Form đăng ký học viên tại FPT Software Academy</h1>
+        <table>
+            <tr>
+                <td>Họ</td>
+                <td><input placeholder="Nhập họ của bạn" type="text"></td>
+            </tr>
+            <tr>
+                <td>Tên</td>
+                <td><input placeholder="Nhập tên của bạn" type="text"></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td><input placeholder="Nhập mật khẩu của bạn" type="text"></td>
+            </tr>
+            <tr>
+                <td >Tuổi</td>
+                <td ><input type="range" id="vol" name="vol" min="0" max="50" ></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input placeholder="Nhập email của bạn" type="email"></td>
+            </tr>
+            <tr>
+                <td>Request car parking</td>
+                <td>
+                <form action="">
+                    <input type="radio" name="gender" >Nữ
+                    <input type="radio" name="gender">Nam
+                    <input type="radio" name="gender">khác
+                </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Trình độ</td>
+                <td><form action="#">
+                    <select id="cars" name="cars"> 
+                      <option value="volvo">Chọn trình độ</option>
+                      <option value="saab">Giỏi</option>
+                      <option value="fiat">Khá</option>
+                    </select>
+                  </form></td>
+            </tr>
+            <tr>
+                <td>Khóa học</td>
+                <td>
+                    <form action="">
+                        <input type="checkbox" name="Java">Java
+                        <input type="checkbox" name="Net" >Net
+                        <input type="checkbox" name="Frontend">Frontend
+                        <input type="checkbox" name="Angular">Angular
+                        <input type="checkbox" name="React" >React
+                        <input type="checkbox" name="NodeJs">NodeJs
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Quê quán</td>
+                <td>
+                    <textarea placeholder="Nhập địa chỉ nhà, gồm số nhà, đường, phố, phường/xã" name="note" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button name="button" value="OK" type="button">Đăng ký</button>  
+                    <button name="button" value="OK" type="button">Điền lại</button>  
+                </td>
+
+            </tr>
+        </table> 
+    </div>
+</body>
+</html>

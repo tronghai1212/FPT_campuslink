@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(0, 78, 129);
+}
+
+.card {
+    margin-bottom: 95px;
+    border-radius: 0;
+}
+
+.lcol {
+    padding-right: 10px;
+}
+
+.rcol {
+    padding-left: 10px;
+}
+
+.file-group {
+    position: relative;
+}
+
+.file-btn {
+    position: absolute;
+    background-color: #f99104;
+    padding: 1px 8px;
+    top: 5px;
+    right: 5px;
+    color: #fff;
+    margin: 0;
+}
+
+.btn-style {
+    background-color: #f99104;
+    color: #fff;
+    padding: 6px 20px;
+}
+
+.file-btn:hover,
+.btn-style:hover {
+    color: #fff;
+    background-color: black;
+}
+
+.hint {
+    font-size: 13px;
+    color: #8C8C8C;
+}
+
+.err {
+    color: red;
+    font-size: 14px;
+    padding: 0;
+}
+
+.form-control,
+.custom-select {
+    border-color: black;
+    border-radius: 0;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+textarea {
+    resize: none;
+}

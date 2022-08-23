@@ -1,0 +1,35 @@
+
+.form-title {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.border-custom {
+    border: 2px solid #56595e;
+    border-radius: 0;
+}
+
+.card-header {
+    border-bottom: 2px solid #56595e;
+}
+
+input, button, select, textarea {
+    border-radius: 0 !important;
+}
+
+.btn-light {
+    background-color: #dadbde;
+}
+
+.card-login {
+    max-width: 85%;
+    margin: 5% 10% 10%;
+}
+
+.col-boder {
+    border-right: 2px solid #56595e;
+}
+
+.err {
+    color: red;
+}

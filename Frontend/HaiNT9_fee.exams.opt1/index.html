@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form apply Job</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-sm-center">
+            <h1 class="text-center text-white p-5 font-weight-normal mb-0 form-name">Job Application Form Widget</h1>
+            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10">
+                <div class="card p-4">
+                    <form name="form" action="#" onreset="clearForm()">
+                        <div class="form-row">
+                            <div class="form-group col-sm-6 pr-2">
+                                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First name">
+                                <div id="firstNameError" class="err"></div>
+                            </div>
+                            <div class="form-group col-sm-6 pl-2">
+                                <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last name">
+                                <div id="lastNameError" class="err"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-6 pr-2">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                <div id="emailError" class="err"></div>
+                            </div>
+                            <div class="form-group col-sm-6 pl-2">
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone">
+                                <div id="phoneError" class="err"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select name="country" class="custom-select" id="country">
+                                <option value="" selected="selected" >Select country</option>
+                            </select>
+                            <div id="countryError" class="err"></div>
+                        </div>
+                        <div class="form-group">
+                            <input name="city" type="text" class="form-control" id="city" placeholder="City">
+                        </div>
+                        <div class="form-group">
+                            <input name="address" type="text" class="form-control" id="address" placeholder="Address">
+                        </div>
+                        <div class="form-group">
+                            <select name="position" class="custom-select" id="position">
+                                <option value="" selected="selected" >Choose desired position</option>
+                            </select>
+                            <div id="positionError" class="err"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" id="infor" rows="3" placeholder="Additional infor"></textarea>
+                        </div>
+                        <div class="form-group file-group">
+                            <input type="text" class="form-control bg-white" readonly id="addCV" placeholder="Add your CV">
+                            <label class="btn btn-default file-btn">
+                                <span>Browse</span>
+                                <input type="file" id="cv" style="display: none;" onchange="document.getElementById('addCV').value = this.value;">
+                            </label>
+                            <span class="hint">Only: pdf / doc Size: lessthan 1 Mb</span>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-style mr-3" type="reset">Reset</button>
+                            <button class="btn btn-style" id="submit" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

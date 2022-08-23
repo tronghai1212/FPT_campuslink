@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order form</title>
+    <style>
+        .form{
+            border: 1px solid rgb(12, 12, 126);
+            padding-left: 10px;
+            width: 50%;
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>Order now</h1>
+        <p>Find us at some address at some place or call us at 05050515-122330</p>
+        <p><b>Reverse</b> a table, ask for today's special or just send us a message:</p>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>How many people</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Include</td>
+                <td>
+                    <form action="">
+                        <input type="checkbox" name="baby">Baby
+                        <input type="checkbox" name="children" >Children
+                        <input type="checkbox" name="old">Old
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Request car parking</td>
+                <td>
+                <form action="">
+                    <input type="radio" name="ys" >Yes
+                    <input type="radio" name="ys">No
+                </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Date and Time</td>
+                <td><input type="datetime"></td>
+            </tr>
+            <tr>
+                <td>Special requirement</td>
+                <td>
+                    <textarea name="note" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button name="button" value="OK" type="button">Send Oder</button>  
+                </td>
+            </tr>
+        </table> 
+    </div>
+</body>
+</html>
